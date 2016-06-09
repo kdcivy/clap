@@ -1,0 +1,16 @@
+
+1) cf cli 설치해서 진행하실 경우
+
+$ cf login --skip-ssl-validation –a https://api.ktds.io
+API endpoint: https://api.ktds.io
+Email>user1
+Password> new1234!
+
+# PostgreSQL
+IP : 172.27.100.101
+Port : 5432
+DB User : ndev / new1234!
+DB명 : ndb
+
+db에 직접접근은 211.253.25.208:15432
+개발된 소스에는 172.27.100.101:5432

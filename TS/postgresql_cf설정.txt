@@ -1,0 +1,52 @@
+INFO 28 - [localhost-startStop-1] c.k.f.boot.config.CloudDataSourceConfig : ==================[ connectionFactory().dataSource(postgresql)=
+org.apache.tomcat.jdbc.pool.DataSource@4bf3aae8{ConnectionPool[
+defaultAutoCommit=null; 
+defaultReadOnly=null; 
+defaultTransactionIsolation=-1; 
+defaultCatalog=null; 
+driverClassName=org.postgresql.Driver; 
+maxActive=4; 
+maxIdle=100;
+minIdle=0; 
+initialSize=0; 
+maxWait=30000; 
+testOnBorrow=true; 
+testOnReturn=false; 
+timeBetweenEvictionRunsMillis=5000; 
+numTestsPerEvictionRun=0; 
+minEvictableIdleTimeMillis=60000; 
+testWhileIdle=false; 
+testOnConnect=false; 
+password=********; 
+url=jdbc:postgresql://pellefant-02.db.elephantsql.com:5432/lwkveaqe?user=lwkveaqe&password=Qmhp59DW6xJtaCmaBHcA4paC2OL46sle; 
+username=null; 
+validationQuery=SELECT 1; 
+validationQueryTimeout=-1; 
+validatorClassName=null; 
+validationInterval=30000; 
+accessToUnderlyingConnectionAllowed=true; 
+removeAbandoned=false; 
+removeAbandonedTimeout=60; 
+logAbandoned=false; 
+connectionProperties=null; 
+initSQL=null; 
+jdbcInterceptors=null; 
+jmxEnabled=true; 
+fairQueue=true; 
+useEquals=true; 
+abandonWhenPercentageFull=0; 
+maxAge=0; 
+useLock=false;
+dataSource=null; 
+dataSourceJNDI=null; 
+suspectTimeout=0; 
+alternateUsernameAllowed=false; 
+commitOnReturn=false; 
+rollbackOnReturn=false; 
+useDisposableConnectionFacade=true; 
+logValidationErrors=false; 
+propagateInterruptState=false; 
+ignoreExceptionOnPreLoad=false; }
+
+
+INFO 19 - [localhost-startStop-1] c.k.f.boot.config.CloudDataSourceConfig : ==================[ connectionFactory().dataSource(mysql)=org.apache.tomcat.jdbc.pool.DataSource@506a891b{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=com.mysql.jdbc.Driver; maxActive=4; maxIdle=100; minIdle=0; initialSize=0; maxWait=30000; testOnBorrow=true; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:mysql://us-cdbr-iron-east-04.cleardb.net/ad_2f708d282430a15?user=bef16f36ce1ddd&password=4dbb86e5; username=null; validationQuery=/* ping */ SELECT 1; validationQueryTimeout=-1; validatorClassName=null; validationInterval=30000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; }

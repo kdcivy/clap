@@ -1,0 +1,17 @@
+---
+applications:
+- name: n-root-on-cf
+  memory: 1024M
+  instances: 1
+  disk_quota: 1024M
+  timeout: 180
+  host: n-root-on-cf-dev
+  path: target/WebApp-2.0-RELEASE.war
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+  - postgresql
+  - mysql
+  stack: cflinuxfs2
+  env:
+    SPRING_PROFILES_DEFAULT: cloud
+  domain: cfapps.io

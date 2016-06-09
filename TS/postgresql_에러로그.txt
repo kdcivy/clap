@@ -1,0 +1,101 @@
+[App] 2016-05-25 18:00:23: ### The error may involve com.sample.common.grid.insert-Inline
+[App] 2016-05-25 18:00:23: ### SQL: INSERT INTO angular_grid (            firstName              , lastName               , company               , age                 ) VALUES (            ?              , ?               , ?               , ?        )
+[App] 2016-05-25 18:00:23: ; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: permission denied for relation angular_grid
+[App] 2016-05-25 18:00:23: 	at com.ktds.framework.sample.angular.grid.Angular_gridController.update(Angular_gridController.java:121)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+[App] 2016-05-25 18:00:23: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+[App] 2016-05-25 18:00:23: 	at org.springframework.boot.context.web.ErrorPageFilter$1.doFilterInternal(ErrorPageFilter.java:95)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:528)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:676)
+[App] 2016-05-25 18:00:23: 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+[App] 2016-05-25 18:00:23: 	at java.lang.Thread.run(Thread.java:745)
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.658 DEBUG 29 - [http-nio-61281-exec-6] c.k.f.c.errorMgmt.BootErrorController    : key=status,value=200
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.658 DEBUG 29 - [http-nio-61281-exec-6] c.k.f.c.errorMgmt.BootErrorController    : key=timestamp,value=Wed May 25 09:00:23 UTC 2016
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.658 DEBUG 29 - [http-nio-61281-exec-6] c.k.f.c.errorMgmt.BootErrorController    : key=error,value=OK
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.659 DEBUG 29 - [http-nio-61281-exec-6] c.k.f.c.errorMgmt.BootErrorController    : key=path,value=/angular_grid/update
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.730  INFO 29 - [http-nio-61281-exec-1] c.k.f.s.a.grid.Angular_gridController    : /angular_grid/selectList selectList Call
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.730  INFO 29 - [http-nio-61281-exec-1] c.k.f.s.a.grid.Angular_gridDaoImpl       : select(obj) invoked...
+[App] 2016-05-25 18:00:23: org.springframework.jdbc.BadSqlGrammarException: 
+[App] 2016-05-25 18:00:23: ### The error occurred while setting parameters
+[App] 2016-05-25 18:00:23: ### The error may exist in file [/home/vcap/app/.java-buildpack/tomcat/webapps/ROOT/WEB-INF/classes/sqlMap/ppas/Angular_gridMapper.xml]
+[App] 2016-05-25 18:00:23: ### The error may involve com.sample.common.grid.selectList-Inline
+[App] 2016-05-25 18:00:23: 	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:99)
+[App] 2016-05-25 18:00:23: ; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: permission denied for relation angular_grid
+[App] 2016-05-25 18:00:23: ### Cause: org.postgresql.util.PSQLException: ERROR: permission denied for relation angular_grid
+[App] 2016-05-25 18:00:23: 	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+[App] 2016-05-25 18:00:23: 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:421)
+[App] 2016-05-25 18:00:23: 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+[App] 2016-05-25 18:00:23: 	at com.sun.proxy.$Proxy80.selectList(Unknown Source)
+[App] 2016-05-25 18:00:23: 	at com.ktds.framework.sample.angular.grid.Angular_gridDaoImpl.select(Angular_gridDaoImpl.java:33)
+[App] 2016-05-25 18:00:23: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+[App] 2016-05-25 18:00:23: 	at com.ktds.framework.sample.angular.grid.Angular_gridServiceImpl.select(Angular_gridServiceImpl.java:27)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[App] 2016-05-25 18:00:23: 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+[App] 2016-05-25 18:00:23: 	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+[App] 2016-05-25 18:00:23: 	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+[App] 2016-05-25 18:00:23: 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+[App] 2016-05-25 18:00:23: 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+[App] 2016-05-25 18:00:23: 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+[App] 2016-05-25 18:00:23: 	at com.ktds.framework.sample.angular.grid.Angular_gridController.selectList(Angular_gridController.java:62)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+[App] 2016-05-25 18:00:23: 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+[App] 2016-05-25 18:00:23: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+[RTR] 2016-05-25 18:00:23: n-root-on-cf-dev.devpack.co.kr - [25/05/2016:09:00:23 +0000] "GET /angular_grid/selectList HTTP/1.1" 200 0 170 "https://n-root-on-cf-dev.devpack.co.kr/sample/index.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36" 192.168.0.29:35716 x_forwarded_for:"175.223.31.197, 211.253.15.51, 192.168.0.29" x_forwarded_proto:"https" vcap_request_id:203aadee-5b27-48fd-6501-5ec8c6a585fa response_time:0.00811091 app_id:bf9d4f2e-06f2-49c3-bf0f-f93d9356a34f
+
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+[App] 2016-05-25 18:00:23: 	at org.springframework.boot.context.web.ErrorPageFilter.access$000(ErrorPageFilter.java:61)
+[App] 2016-05-25 18:00:23: 	at org.springframework.boot.context.web.ErrorPageFilter.doFilter(ErrorPageFilter.java:120)
+[App] 2016-05-25 18:00:23: 	at org.springframework.boot.context.web.ErrorPageFilter.doFilter(ErrorPageFilter.java:113)
+[App] 2016-05-25 18:00:23: 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+[App] 2016-05-25 18:00:23: 	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:676)
+[App] 2016-05-25 18:00:23: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+[App] 2016-05-25 18:00:23: 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+[App] 2016-05-25 18:00:23: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2102)
+[App] 2016-05-25 18:00:23: Caused by: org.postgresql.util.PSQLException: ERROR: permission denied for relation angular_grid
+[App] 2016-05-25 18:00:23: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+[App] 2016-05-25 18:00:23: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1835)
+[App] 2016-05-25 18:00:23: 	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:381)
+[App] 2016-05-25 18:00:23: 	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+[App] 2016-05-25 18:00:23: 	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+[App] 2016-05-25 18:00:23: 	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+[App] 2016-05-25 18:00:23: 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+[App] 2016-05-25 18:00:23: 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[App] 2016-05-25 18:00:23: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.733  INFO 29 - [http-nio-61281-exec-1] c.k.f.c.e.GlobalDefaultExceptionHandler  : ====================== GlobalDefaultExceptionHandler End ======================
+[App] 2016-05-25 18:00:23: 	at java.lang.reflect.Method.invoke(Method.java:498)
+[App] 2016-05-25 18:00:23: 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:408)
+[App] 2016-05-25 18:00:23: 	... 76 common frames omitted
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.734 DEBUG 29 - [http-nio-61281-exec-1] c.k.f.c.errorMgmt.BootErrorController    : key=status,value=200
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.734 DEBUG 29 - [http-nio-61281-exec-1] c.k.f.c.errorMgmt.BootErrorController    : ====================== BootErrorController error Start ======================
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.734 DEBUG 29 - [http-nio-61281-exec-1] c.k.f.c.errorMgmt.BootErrorController    : key=path,value=/angular_grid/selectList
+[App] 2016-05-25 18:00:23: 2016-05-25 09:00:23.735 DEBUG 29 - [http-nio-61281-exec-1] c.k.f.c.errorMgmt.BootErrorController    : ====================== BootErrorController error End ======================

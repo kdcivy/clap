@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sample.common.grid">
+	<!-- selectList -->
+	<select id="selectList" parameterType="com.ktds.framework.sample.angular.grid.Angular_gridVO"
+		resultType="com.ktds.framework.sample.angular.grid.Angular_gridVO">
+		<![CDATA[
+			SELECT * FROM (
+				SELECT row_number() over() as rNum
+									    , angular_grid.id
+								        , angular_grid.firstName
+	    								, angular_grid.lastName
+	    								, angular_grid.company
+	    								, angular_grid.age
+	    					FROM
+						angular_grid angular_grid
+					
+			) T
+			
+			
+        ]]>
+		
+	</select>
+
+	<!-- select -->
+	<select id="select" parameterType="com.ktds.framework.sample.angular.grid.Angular_gridVO"
+		resultType="com.ktds.framework.sample.angular.grid.Angular_gridVO">
+		<![CDATA[
+			SELECT
+					angular_grid.firstName
+    					, angular_grid.lastName
+    					, angular_grid.company
+    					, angular_grid.age
+    				FROM
+				angular_grid angular_grid
+			WHERE
+				id = #{id}
+        ]]>
+	</select>
+																		
+	<!-- insert -->
+	<insert id="insert" parameterType="com.ktds.framework.sample.angular.grid.Angular_gridVO">
+	 	<![CDATA[
+            INSERT INTO angular_grid (
+										 firstName
+											  , lastName 
+											  , company 
+											  , age 
+			            ) VALUES (
+										 #{firstName}
+											  , #{lastName} 
+											  , #{company} 
+											  , #{age} 
+						)
+        ]]>
+	</insert>
+	<!-- update -->
+	<update id="update" parameterType="com.ktds.framework.sample.angular.grid.Angular_gridVO">
+		<![CDATA[
+			UPDATE angular_grid SET 
+										firstName =	 #{firstName}
+											,lastName = #{lastName}
+											,company = #{company}
+											,age = #{age}
+			             WHERE	id = #{id}
+        ]]>
+	</update>
+	
+	<!-- delete -->
+	<delete id="delete" parameterType="com.ktds.framework.sample.angular.grid.Angular_gridVO">
+		<![CDATA[
+			DELETE 
+				FROM angular_grid
+			WHERE ID = #{id}
+        ]]>
+		
+	</delete>
+
+</mapper>

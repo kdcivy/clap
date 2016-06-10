@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+	<!-- SqlSessionFactoryBean is used to create an SqlSessionFactory -->
+	<bean id="sqlSessionFactory" lazy-init="true" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="ppasDataSource" />
+		<property name="mapperLocations" value="classpath*:sqlMap/ppas/*.xml" />
+		<property name="configLocation" value="classpath:mybatisConfig.xml" />
+<!--
+		<property name="typeAliasesPackage" value="com.sample" />
+-->
+	</bean>
+	
+	<!-- mybatis mapper interface 1개만 지정하는 방식 -->
+<!-- 	<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface"
+			value="com.ktds.framework.sample.mybatis.persistence" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+-->
+	
+<!-- mybatis mapper file auto scanning - 방식 1 -->
+<!-- 
+	<mybatis-spring:scan base-package="com.ktds.framework.sample.mybatis.persistence"/>
+ --> 
+ <!-- scan for mappers and let them be auto wired - 방식 2  -->
+	 <bean lazy-init="true" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	  <property name="basePackage" value="com.ktds.framework.sample.mybatis.persistence,
+	  	com.ktds.framework.common.errorMgmt.mapper" />
+	  <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+	
+	<!-- SqlSessionTemplate을 사용하여 DAO를 사용하고자 하는 경우 -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+	  <constructor-arg index="0" ref="sqlSessionFactory" />
+	  <!-- <constructor-arg index="1" value="BATCH" /> --> <!-- Batch SqlSession ExecutorType 이 필요한 경우 -->
+	  <qualifier value="mybatisSqlSession"/>
+	</bean>
+</beans>

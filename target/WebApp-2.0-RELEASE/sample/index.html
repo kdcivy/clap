@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-ng-controller="BaseController">
+<head>
+	<title>kt ds Angular App</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- CSS Static load -->	
+	<link rel="stylesheet" href="css/angular-motion.min.css">
+	<link rel="stylesheet" href="css/dialogs.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/treasure-overlay-spinner.css">
+	<link rel="stylesheet" href="css/appMain.css">
+	
+
+	<!-- CSS Dynamic load -->	
+	<link ng-repeat="stylesheet in stylesheets track by $index" ng-href="{{stylesheet}}" type="text/css" rel="stylesheet" />
+
+</head>
+
+<div class="container">
+
+
+	<div class="GnBArea" data-ng-include="'./partials/areaGnB.html'"></div>
+	
+	<div class="SnBArea" data-ng-include="'partials/areaSnB.html'"></div>
+	
+	<div  class="ngViewArea" ng-view ></div>
+
+		
+</div>
+
+	<!-- main.js 시작 -->
+	<script data-main="js/main" src="libs/requirejs-2.1.17/require-2.1.17.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+<treasure-overlay-spinner active='spinner.active'>
+<div class="panel panel-default">
+  <div class="panel-heading">다양한 폼 예제</div>
+  <div class="panel-body">
+ 
+</div>
+ 
+ <pre>내장 Pagination</pre>
+<div class="gridStyle"  ui-grid-pagination ui-grid="gridOptions1"></div></br></br>
+
+<pre>Custom Pagination</pre>
+<div class="gridStyle"  ui-grid-pagination ui-grid="gridOptions2"></div>
+
+<p>Current page: {{ gridApi2.pagination.getPage() }} of {{ gridApi2.pagination.getTotalPages() }}</p>
+      <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.previousPage()">
+        previous page
+      </button>
+      <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.nextPage()">
+        next page
+      </button>
+      <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.seek(3)">
+        go to page 3
+      </button>
+
+      
+</div>
+</treasure-overlay-spinner>

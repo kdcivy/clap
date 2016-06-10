@@ -1,0 +1,39 @@
+<treasure-overlay-spinner active='spinner.active'>
+<div class="panel panel-default">
+	<div class="panel-heading">CRUD Grid MySQL예제</div>
+	<div class="panel-body"></div>
+ 
+	<div class="gridStyle" ui-grid-selection external-scopes="myViewModel" ui-grid="gridOptions"></div></br></br>
+	
+	<form name="form" class="form-horizontal" novalidate>
+		<div class="form-group">
+		    <label class="col-sm-1">emp_no</label>
+		    <div class="col-sm-3"><input type="text" class="form-control" name="emp_no"  ng-model="info.emp_no"  disabled></div>
+	    </div>
+	    <div class="form-group">
+		    <label class="col-sm-1">birth_date</label>
+		    <div class="col-sm-3"><input type="text" class="form-control" name="birth_date"  ng-model="info.birth_date" ng-disabled="!isSelect"></div>
+	    </div>
+	    <div class="form-group">
+			<label  class="col-sm-1">first_name</label>
+			<div class="col-sm-3"><input type="text" class="form-control"  name="first_name" ng-model="info.first_name"  ng-disabled="!isSelect"></div>
+	    </div>  
+	    <div class="form-group">
+		 	<label class="col-sm-1">last_name</label>
+			<div class="col-sm-3"><input type="text" class="form-control"  name="last_name" ng-model="info.last_name"  ng-disabled="!isSelect"></div>
+	    </div>  
+	    <div class="form-group">
+			<label class="col-sm-1">gender</label>
+			<div class="col-sm-3"><input type="text" class="form-control" name="gender" ng-model="info.gender"  ng-disabled="!isSelect"></div>
+	    </div>  
+	    <div class="form-group">
+			<label class="col-sm-1">hire_date</label>
+			<div class="col-sm-3"><input type="text" class="form-control" name="hire_date" ng-model="info.hire_date"  ng-disabled="!isSelect"></div>
+	    </div>  
+	    <div class="form-group">
+		    <div class="col-sm-5 "></div>
+		    <button type="button" class="btn btn-success" ng-click="addForm()">등록</button>
+	    </div>
+	</form>
+</div>
+</treasure-overlay-spinner>

@@ -1,0 +1,20 @@
+	<h4>Single toggle</h4>
+		<pre>{{singleModel}}</pre>
+		<button type="button" class="btn btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+			Single Toggle
+		</button>
+		<h4>Checkbox</h4>
+		<pre>{{checkModel}}</pre>
+		
+			<input type="checkbox" ng-model="checkModel.left" >Left
+			<input type="checkbox" ng-model="checkModel.middle">Middle
+			<input type="checkbox" ng-model="checkModel.right" >Right
+			
+		
+		<h4>Radio &amp; Uncheckable Radio</h4>
+		<pre>{{radioModel }}</pre>
+		<div class="btn-group">
+			<input type="radio" ng-model="radioModel" value="left">Left
+			<input type="radio" ng-model="radioModel" value="middle">Middle
+			<input type="radio" ng-model="radioModel" value="right">Right
+		</div>

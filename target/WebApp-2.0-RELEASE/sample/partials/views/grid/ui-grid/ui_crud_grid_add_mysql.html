@@ -1,0 +1,59 @@
+<div class="modal-header">
+<h4 class="modal-title"><span class="glyphicon glyphicon-star"></span> 등록</h4></div>
+<div class="modal-body">
+
+ <form name="form" class="form-horizontal" novalidate>
+
+    
+    <div class="form-group">
+      <label class="col-sm-1">emp_no</label>
+      <div class="col-sm-3"><input type="text" class="form-control" name="emp_no"  ng-model="info.emp_no"></div>
+      
+      
+      </div>
+    
+    
+    <div class="form-group">
+	 <label  class="col-sm-1">birth_date</label>
+	 <div class="col-sm-3"><input type="text" class="form-control"  name="birth_date" ng-model="info.birth_date"></div>
+       
+    </div>  
+    
+    <div class="form-group">
+	 <label  class="col-sm-1">first_name</label>
+	 <div class="col-sm-3"><input type="text" class="form-control"  name="first_name" ng-model="info.first_name"></div>
+       
+    </div>  
+    
+    <div class="form-group">
+	 <label  class="col-sm-1">last_name</label>
+	 <div class="col-sm-3"><input type="text" class="form-control" name="last_name" ng-model="info.last_name"></div>
+       
+    </div>  
+    
+    <div class="form-group">
+	 <label  class="col-sm-1">gender</label>
+	 <div class="col-sm-3"><input type="text" class="form-control" name="gender" ng-model="info.gender"></div>
+       
+    </div>  
+
+    <div class="form-group">
+	 <label  class="col-sm-1">hire_date</label>
+	 <div class="col-sm-3"><input type="text" class="form-control" name="hire_date" ng-model="info.hire_date"></div>
+       
+    </div>  
+
+    </div>
+    <div class="modal-footer">
+    
+       
+  
+    <div class="form-group">
+      <div class="col-sm-5 "></div>
+        <button type="button" class="btn btn-success" ng-click="add()">등록</button>
+        <button type="button" class="btn btn-danger" ng-click="cancel()">취소</button>
+
+      
+    </div>
+  </form>
+  </div>

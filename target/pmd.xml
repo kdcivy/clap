@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.3.2" timestamp="2016-06-10T17:05:59.338">
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\boot\SubJpaProfile.java">
+<violation beginline="38" endline="38" begincolumn="105" endcolumn="113" rule="SignatureDeclareThrowsException" ruleset="Strict Exceptions" package="com.ktds.framework.boot" class="SubJpaProfile" method="jpaTxManager" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/strictexception.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\boot\SubMybatisMultipleProfile.java">
+<violation beginline="39" endline="39" begincolumn="128" endcolumn="136" rule="SignatureDeclareThrowsException" ruleset="Strict Exceptions" package="com.ktds.framework.boot" class="SubMybatisMultipleProfile" method="mybatisSqlSession" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/strictexception.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+<violation beginline="64" endline="64" begincolumn="131" endcolumn="139" rule="SignatureDeclareThrowsException" ruleset="Strict Exceptions" package="com.ktds.framework.boot" class="SubMybatisMultipleProfile" method="mybatisSqlSession2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/strictexception.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\boot\config\SingleDataSourceConfig.java">
+<violation beginline="67" endline="67" begincolumn="53" endcolumn="61" rule="SignatureDeclareThrowsException" ruleset="Strict Exceptions" package="com.ktds.framework.boot.config" class="SingleDataSourceConfig" method="productionDataSource" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/strictexception.html#SignatureDeclareThrowsException" priority="3">
+A method/constructor shouldnt explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\common\pagination\Page.java">
+<violation beginline="7" endline="54" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Naming" package="com.ktds.framework.common.pagination" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#ShortClassName" priority="5">
+Avoid short class names like Page
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\form\Angular_formController.java">
+<violation beginline="33" endline="33" begincolumn="33" endcolumn="51" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.form" class="Angular_formController" variable="angular_formService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_formService' is not final.
+</violation>
+<violation beginline="41" endline="41" begincolumn="48" endcolumn="61" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.form" class="Angular_formController" method="selectList" variable="angular_formVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_formVO' is not final.
+</violation>
+<violation beginline="74" endline="74" begincolumn="48" endcolumn="61" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.form" class="Angular_formController" method="update" variable="angular_formVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_formVO' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\form\Angular_formDaoImpl.java">
+<violation beginline="19" endline="19" begincolumn="17" endcolumn="38" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.form" class="Angular_formDaoImpl" variable="sqlSession" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\form\Angular_formServiceImpl.java">
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="43" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.form" class="Angular_formServiceImpl" variable="angularFormDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\Angular_gridController.java">
+<violation beginline="34" endline="34" begincolumn="13" endcolumn="52" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.grid" class="Angular_gridController" variable="angular_gridService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="34" endline="34" begincolumn="33" endcolumn="51" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid" class="Angular_gridController" variable="angular_gridService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_gridService' is not final.
+</violation>
+<violation beginline="42" endline="42" begincolumn="32" endcolumn="45" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid" class="Angular_gridController" method="listForm" variable="angular_gridVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_gridVO' is not final.
+</violation>
+<violation beginline="56" endline="56" begincolumn="48" endcolumn="61" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid" class="Angular_gridController" method="selectList" variable="angular_gridVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_gridVO' is not final.
+</violation>
+<violation beginline="88" endline="88" begincolumn="48" endcolumn="61" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid" class="Angular_gridController" method="update" variable="angular_gridVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_gridVO' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\Angular_gridDaoImpl.java">
+<violation beginline="19" endline="19" begincolumn="17" endcolumn="38" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.grid" class="Angular_gridDaoImpl" variable="sqlSession" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\Angular_gridServiceImpl.java">
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="44" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.grid" class="Angular_gridServiceImpl" variable="angular_gridDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="23" endline="23" begincolumn="29" endcolumn="43" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid" class="Angular_gridServiceImpl" variable="angular_gridDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_gridDao' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\mysql\Angular_grid_MysqlController.java">
+<violation beginline="33" endline="33" begincolumn="13" endcolumn="64" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlController" variable="angular_grid_mysqlService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="33" endline="33" begincolumn="39" endcolumn="63" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlController" variable="angular_grid_mysqlService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_grid_mysqlService' is not final.
+</violation>
+<violation beginline="41" endline="41" begincolumn="38" endcolumn="57" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlController" method="listForm" variable="angular_grid_mysqlVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_grid_mysqlVO' is not final.
+</violation>
+<violation beginline="55" endline="55" begincolumn="54" endcolumn="73" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlController" method="selectList" variable="angular_grid_mysqlVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_grid_mysqlVO' is not final.
+</violation>
+<violation beginline="87" endline="87" begincolumn="54" endcolumn="73" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlController" method="insert" variable="angular_grid_mysqlVO" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_grid_mysqlVO' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\mysql\Angular_grid_MysqlDaoImpl.java">
+<violation beginline="19" endline="19" begincolumn="17" endcolumn="38" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlDaoImpl" variable="sqlSession" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\mysql\Angular_grid_MysqlServiceImpl.java">
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="56" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlServiceImpl" variable="angular_grid_mysqlDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="23" endline="23" begincolumn="35" endcolumn="55" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlServiceImpl" variable="angular_grid_mysqlDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'angular_grid_mysqlDao' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\angular\grid\mysql\Angular_grid_MysqlVO.java">
+<violation beginline="13" endline="13" begincolumn="17" endcolumn="22" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="19" endline="19" begincolumn="20" endcolumn="29" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" variable="birth_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'birth_date' is not final.
+</violation>
+<violation beginline="25" endline="25" begincolumn="20" endcolumn="29" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" variable="first_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'first_name' is not final.
+</violation>
+<violation beginline="31" endline="31" begincolumn="20" endcolumn="28" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" variable="last_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'last_name' is not final.
+</violation>
+<violation beginline="43" endline="43" begincolumn="20" endcolumn="28" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+<violation beginline="49" endline="49" begincolumn="35" endcolumn="40" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" method="setEmp_no" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="57" endline="57" begincolumn="42" endcolumn="51" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" method="setBirth_date" variable="birth_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'birth_date' is not final.
+</violation>
+<violation beginline="65" endline="65" begincolumn="42" endcolumn="51" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" method="setFirst_name" variable="first_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'first_name' is not final.
+</violation>
+<violation beginline="73" endline="73" begincolumn="41" endcolumn="49" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" method="setLast_name" variable="last_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'last_name' is not final.
+</violation>
+<violation beginline="89" endline="89" begincolumn="41" endcolumn="49" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.angular.grid.mysql" class="Angular_grid_MysqlVO" method="setHire_date" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\crypt\cryptController.java">
+<violation beginline="29" endline="141" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.crypt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#ClassNamingConventions" priority="5">
+Class names should begin with an uppercase character
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\jdbc\EmployeeServiceImpl.java">
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="40" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.jdbc" class="EmployeeServiceImpl" variable="employeeDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\jpa\Employee.java">
+<violation beginline="20" endline="20" begincolumn="20" endcolumn="25" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="21" endline="21" begincolumn="20" endcolumn="25" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" variable="emp_nm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_nm' is not final.
+</violation>
+<violation beginline="22" endline="22" begincolumn="20" endcolumn="28" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+<violation beginline="27" endline="27" begincolumn="42" endcolumn="47" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" method="Employee" variable="emp_nm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_nm' is not final.
+</violation>
+<violation beginline="27" endline="27" begincolumn="28" endcolumn="33" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" method="Employee" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="27" endline="27" begincolumn="56" endcolumn="64" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" method="Employee" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+<violation beginline="42" endline="42" begincolumn="38" endcolumn="43" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" method="setEmp_no" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="48" endline="48" begincolumn="38" endcolumn="43" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" method="setEmp_nm" variable="emp_nm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_nm' is not final.
+</violation>
+<violation beginline="54" endline="54" begincolumn="41" endcolumn="49" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.jpa" class="Employee" method="setHire_date" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\jpa\EmployeeController.java">
+<violation beginline="21" endline="21" begincolumn="17" endcolumn="48" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.jpa" class="EmployeeController" variable="employeeService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\mybatis\dao\EmployeeDaoImpl.java">
+<violation beginline="20" endline="20" begincolumn="17" endcolumn="38" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.mybatis.dao" class="EmployeeDaoImpl" variable="sqlSession" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\mybatis\service\EmployeeServiceImpl.java">
+<violation beginline="41" endline="41" begincolumn="17" endcolumn="40" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.mybatis.service" class="EmployeeServiceImpl" variable="employeeDao" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\mybatis\web\EmployeeController.java">
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="48" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.mybatis.web" class="EmployeeController" variable="employeeService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\mysql\Employee.java">
+<violation beginline="9" endline="9" begincolumn="21" endcolumn="26" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="11" endline="11" begincolumn="20" endcolumn="29" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" variable="birth_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'birth_date' is not final.
+</violation>
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="29" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" variable="first_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'first_name' is not final.
+</violation>
+<violation beginline="15" endline="15" begincolumn="20" endcolumn="28" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" variable="last_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'last_name' is not final.
+</violation>
+<violation beginline="19" endline="19" begincolumn="20" endcolumn="28" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+<violation beginline="25" endline="25" begincolumn="35" endcolumn="40" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" method="setEmp_no" variable="emp_no" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'emp_no' is not final.
+</violation>
+<violation beginline="33" endline="33" begincolumn="42" endcolumn="51" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" method="setBirth_date" variable="birth_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'birth_date' is not final.
+</violation>
+<violation beginline="41" endline="41" begincolumn="42" endcolumn="51" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" method="setFirst_name" variable="first_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'first_name' is not final.
+</violation>
+<violation beginline="49" endline="49" begincolumn="41" endcolumn="49" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" method="setLast_name" variable="last_name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'last_name' is not final.
+</violation>
+<violation beginline="65" endline="65" begincolumn="41" endcolumn="49" rule="VariableNamingConventions" ruleset="Naming" package="com.ktds.framework.sample.mysql" class="Employee" method="setHire_date" variable="hire_date" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="5">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'hire_date' is not final.
+</violation>
+</file>
+<file name="C:\CLAP2\SpringBootWebApp.03.28\src\main\java\com\ktds\framework\sample\web\ViewResolverTestController.java">
+<violation beginline="26" endline="26" begincolumn="17" endcolumn="48" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.web" class="ViewResolverTestController" variable="employeeService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="30" endline="30" begincolumn="17" endcolumn="50" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="com.ktds.framework.sample.web" class="ViewResolverTestController" variable="errorMgmtService" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+</pmd>

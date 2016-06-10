@@ -1,0 +1,39 @@
+---
+spring:
+  profiles: local
+datasource:
+  db-ppas:
+      url: jdbc:postgresql://10.225.8.128:5444/nr_sample
+      username: qpedu1113
+      password: new1234
+      driver-class-name: org.postgresql.Driver
+      max-active: 100
+      max-idle: 8
+      min-idle: 8
+  db-mysql:
+      url: jdbc:mysql://10.225.8.128:3306/nr_sample
+      username: nrootdev
+      password: mysqldev
+      driver-class-name: com.mysql.jdbc.Driver
+
+---
+
+spring:
+  profiles: staging
+datasource:
+  db-ppas:
+      jndi: java:comp/env/jdbc/ppasDataSource
+  db-mysql:
+      jndi: java:comp/env/jdbc/mysql-dataSource
+
+---
+
+spring:
+  profiles: production
+datasource:
+  db-ppas:
+      jndi: java:jboss/datasources/ppasDS
+  db-mysql:
+      jndi: java:jboss/datasources/mysqlDS
+
+---

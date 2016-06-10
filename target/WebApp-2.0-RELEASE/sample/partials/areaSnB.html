@@ -1,0 +1,17 @@
+<div ng-controller="SnBController">
+
+
+
+	 <div style="width:200px;margin:10px 0 30px 0; padding:10px; background-color:#EEEEEE; border-radius:5px; font:12px Tahoma;">
+	<span><b>Route : {{menuTree.currentNode.link}}</b></span>
+</div>
+
+<div
+      data-angular-treeview="true"
+      data-tree-id="menuTree"
+      data-tree-model="roleList"
+      data-node-label="roleName"
+      data-node-children="children" >
+    </div>
+
+</div>

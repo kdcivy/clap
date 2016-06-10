@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="SpringContextListener" class="com.ktds.framework.boot.SpringContextListener"></bean>
+	<bean id="ApplicationContextHolder" class="com.ktds.framework.boot.ApplicationContextHolder"></bean>
+
+	<!-- import the dataSource single profile definition -->
+<!--  	<import resource="datasource-single-config.xml" /> -->
+	
+<!-- ***************[ Start : Transaction Configuration ]*************** -->
+	<!-- Single Transaction manager for a single JDBC DataSource (alternative to JTA) -->
+	<bean id="single-transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="ppasDataSource" />
+		<qualifier value="ppas"></qualifier> <!-- transactionManager qualifier : @Transactional 에 사용 -->
+	</bean>
+	<!-- annotation 방식 : enables scanning for @Transactional annotations-->
+	<!-- Single Transaction Manager -->
+	<tx:annotation-driven transaction-manager="single-transactionManager"/>
+	
+	<!-- Multi Transaction Manager -->
+	
+	<!-- AOP 방식 : AOP 방식의 Transaction Control -->
+<!-- ***************[ End : Transaction Configuration ]*************** -->
+
+	<!-- Auto Scanning for Service and Repository beans -->
+	<context:component-scan base-package="com.ktds.framework" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+	</context:component-scan>
+
+<!-- ***************[ Start : JDBC Data Access Configuration ]*************** -->
+	<import resource="sub-jdbc-profile.xml"/>
+<!-- ***************[ End : JDBC Data Access Configuration ]*************** -->
+
+<!-- ***************[ Start : myBatis Data Access Configuration ]*************** -->
+	<!-- mybatis 방식 database 접근 -->
+	<import resource="sub-mybatis-profile.xml"/>
+<!-- ***************[ End : myBatis Data Access Configuration ]*************** -->
+
+<!-- ***************[ Start : JPA Data Access Configuration ]*************** -->
+	<import resource="sub-jpa-profile.xml"/>
+<!-- ***************[ End : JPA Data Access Configuration ]*************** -->
+
+</beans>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ktds.framework.sample.mybatis.persistence.ErrorMgmtMapper">
+	<!-- select -->
+	<select id="selectList" parameterType="com.ktds.framework.sample.mybatis.domain.ErrorMgmt"
+		resultType="com.ktds.framework.sample.mybatis.domain.ErrorMgmt">
+	 	<![CDATA[
+			SELECT ERROR_NO errorNo
+				, ERROR_CODE errorCode
+				, ERROR_NAME errorName
+				, ERROR_TYPE errorType
+				, ERROR_MESSAGE errorMessage
+				, OCCUR_CLASS occurClass
+				, OCCUR_METHOD occurMethod
+				, OCCUR_TIME occurTime
+			FROM sffw_errorlog_info
+        ]]>
+		<if test="searchString != null and searchString != '' ">
+			<choose>
+	        	<when test="searchOper != null and searchOper == 'eq'">
+					AND ${searchField} = '${searchString}'
+				</when>
+				<when test="searchOper != null and searchOper == 'ne'">
+					AND ${searchField} != '${searchString}'
+				</when>
+				<when test="searchOper != null and searchOper == 'bw'">
+					AND ${searchField} like '${searchString}%'
+				</when>
+				<when test="searchOper != null and searchOper == 'bn'">
+					AND ${searchField} not like '${searchString}%'
+				</when>
+				<when test="searchOper != null and searchOper == 'ew'">
+					AND ${searchField} like '%${searchString}'
+				</when>
+				<when test="searchOper != null and searchOper == 'en'">
+					AND ${searchField} not like '%${searchString}'
+				</when>
+				<when test="searchOper != null and searchOper == 'cn'">
+					AND ${searchField} like '%${searchString}%'
+				</when>
+				<when test="searchOper != null and searchOper == 'nc'">
+					AND ${searchField} not like '%${searchString}%'
+				</when>
+				<when test="searchOper != null and searchOper == 'in'">
+					AND ${searchField} like '%${searchString}%'
+				</when>
+				<when test="searchOper != null and searchOper == 'ni'">
+					AND ${searchField} not like '%${searchString}%'
+				</when>
+				<otherwise>
+					AND ${searchField} = '${searchString}'
+				</otherwise>
+			</choose>
+
+		</if>
+
+		<choose>
+        	<when test='sidx != null and sord == "asc"'>
+				ORDER BY ${sidx} asc
+			</when>
+<!-- 			<otherwise>
+				ORDER BY ${sidx} desc
+			</otherwise> -->
+		</choose>
+	</select>
+	
+	<!-- insert master code -->
+	<insert id="insMasterData" parameterType="com.ktds.framework.sample.mybatis.domain.ErrorMgmt">
+	 	<![CDATA[
+            INSERT
+              INTO sffw_errorlog_info
+                 (ERROR_NO
+                 , ERROR_CODE
+                 , ERROR_NAME
+                 , ERROR_TYPE
+                 , ERROR_MESSAGE
+                 , OCCUR_CLASS
+                 , OCCUR_METHOD
+                 , OCCUR_TIME
+                 )
+            VALUES
+                 (errorlog_seq.nextval
+                 ,#{errorCode}
+                 , #{errorName}
+                 , #{errorType}
+                 , #{errorMessage}
+                 , #{occurClass}
+                 , #{occurMethod}
+                 , sysdate
+                 )
+        ]]>
+	</insert>
+	
+	<!-- delete master Data -->
+	<delete id="delMasterData" parameterType="com.ktds.framework.sample.mybatis.domain.ErrorMgmt">
+	 	<![CDATA[
+             DELETE 
+               FROM sffw_errorlog_info
+              WHERE ERROR_NO IN
+        ]]>
+        <foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+             #{item.errorNo}
+        </foreach>
+	</delete>
+</mapper>

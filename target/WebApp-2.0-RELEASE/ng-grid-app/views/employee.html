@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="employeeApp">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../lib/js/angular.js"></script>
+    <script src="../controllers/employeeController.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+	<div ng-controller="getEmployeeList">
+		<ul>
+			<li ng-repeat="employee in employees.employeeList">
+				{{employee.empNo + "," + employee.empNm + "," + employee.hireDate}}<br>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

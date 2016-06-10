@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Custom 필터 예제</div>
+  <div class="panel-body">
+    
+</div>
+
+
+1. Custom Filter</br></br>
+
+mainApp.controller('FilterController', function($scope){</br>
+						console.log('FilterController Call');</br>
+			$scope.text = "010-1234-4567";</br>
+				
+			});</br>
+<pre>원본 : {{text}}</pre>
+결과 : {{ text | filtertest }}
+</br></br>
+2. Uppercase Filter
+<pre>원본 : abcde</pre>
+결과 : {{ "abcde" | uppercase }}
+</br></br>
+3. currency Filter
+<pre>원본 : 1111</pre>
+결과 : {{ "1111" | currency:"￦":0}}
+
+
+
+</div>
+

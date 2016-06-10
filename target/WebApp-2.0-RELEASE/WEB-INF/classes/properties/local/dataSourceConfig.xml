@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>application config</comment>
+	
+	<!-- PPAS database -->
+	<entry key="jdbc.driverClassName">org.postgresql.Driver</entry>
+	<entry key="jdbc.url">jdbc:postgresql://10.225.8.128:5444/nr_sample</entry>
+	<entry key="jdbc.username">qpedu1113</entry>
+	<entry key="jdbc.password">new1234</entry>
+	
+	<!-- MySql database -->
+	<entry key="mysql.jdbc.driverClassNam">com.mysql.jdbc.Driver</entry>
+	<entry key="mysql.jdbc.url">jdbc:mysql://10.225.8.128:3306/nr_sample</entry>
+	<entry key="mysql.jdbc.username">nrootdev</entry>
+	<entry key="mysql.jdbc.password">mysqldev</entry>
+</properties>

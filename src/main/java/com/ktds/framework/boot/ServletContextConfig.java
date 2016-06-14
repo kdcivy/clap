@@ -70,6 +70,7 @@ public class ServletContextConfig extends WebMvcConfigurerAdapter {
     	registry.addResourceHandler("/sample/**").addResourceLocations("/sample/");
     	registry.addResourceHandler("/app/**").addResourceLocations("/app/");
     	registry.addResourceHandler("/ng-grid/**").addResourceLocations("/ng-grid-app/");
+    	registry.addResourceHandler("/favicon.ico").addResourceLocations("/favicon.ico");
  	}
 		
 	@Bean

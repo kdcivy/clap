@@ -14,4 +14,4 @@ applications:
   stack: cflinuxfs2
   env:
     SPRING_PROFILES_DEFAULT: cloud
-  domain: cfapps.io
+#  domain: cfapps.io
